@@ -52,7 +52,8 @@
 					result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
 				}
 			}
-			
+			result['offline'] = '1';//默认离线版
+			result['lang'] = 'zh';//修改默认语言为中文
 			return result;
 		})();
 		
